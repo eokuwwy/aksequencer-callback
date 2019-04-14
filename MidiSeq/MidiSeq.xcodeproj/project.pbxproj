@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		176335DB2263C73400B46BD3 /* Conductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176335DA2263C73400B46BD3 /* Conductor.swift */; };
 		B64863CB226376F40056CDDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64863CA226376F40056CDDE /* AppDelegate.swift */; };
 		B64863CD226376F40056CDDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64863CC226376F40056CDDE /* ViewController.swift */; };
 		B64863D0226376F40056CDDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64863CE226376F40056CDDE /* Main.storyboard */; };
 		B64863D2226376F50056CDDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64863D1226376F50056CDDE /* Assets.xcassets */; };
 		B64863D5226376F50056CDDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64863D3226376F50056CDDE /* LaunchScreen.storyboard */; };
 		B64863DD22637FDA0056CDDE /* MidiSequencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64863DC22637FDA0056CDDE /* MidiSequencer.swift */; };
+		CEBB84E8B16EAB5E2A30098E /* Pods_MidiSeq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120EED9F637CD475BA24586A /* Pods_MidiSeq.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BD8517795D5025CE79E5833 /* Pods-MidiSeq.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MidiSeq.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MidiSeq/Pods-MidiSeq.release.xcconfig"; sourceTree = "<group>"; };
+		120EED9F637CD475BA24586A /* Pods_MidiSeq.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MidiSeq.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		176335DA2263C73400B46BD3 /* Conductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conductor.swift; sourceTree = "<group>"; };
 		B64863C7226376F40056CDDE /* MidiSeq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidiSeq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64863CA226376F40056CDDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B64863CC226376F40056CDDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBB84E8B16EAB5E2A30098E /* Pods_MidiSeq.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 		0FF6F60FD436F7AF9C571AB5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				120EED9F637CD475BA24586A /* Pods_MidiSeq.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -77,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				B64863CA226376F40056CDDE /* AppDelegate.swift */,
+				176335DA2263C73400B46BD3 /* Conductor.swift */,
 				B64863DC22637FDA0056CDDE /* MidiSequencer.swift */,
 				B64863CC226376F40056CDDE /* ViewController.swift */,
 				B64863CE226376F40056CDDE /* Main.storyboard */,
@@ -185,7 +192,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-MidiSeq/Pods-MidiSeq-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MidiSeq/Pods-MidiSeq-frameworks.sh",
 				"${PODS_ROOT}/AudioKit/iOS/AudioKitUI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -194,7 +201,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-MidiSeq/Pods-MidiSeq-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MidiSeq/Pods-MidiSeq-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -207,6 +214,7 @@
 				B64863CD226376F40056CDDE /* ViewController.swift in Sources */,
 				B64863DD22637FDA0056CDDE /* MidiSequencer.swift in Sources */,
 				B64863CB226376F40056CDDE /* AppDelegate.swift in Sources */,
+				176335DB2263C73400B46BD3 /* Conductor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A6J5NASTC7;
+				DEVELOPMENT_TEAM = D4Z52CBL7L;
 				INFOPLIST_FILE = MidiSeq/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -374,7 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A6J5NASTC7;
+				DEVELOPMENT_TEAM = D4Z52CBL7L;
 				INFOPLIST_FILE = MidiSeq/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
