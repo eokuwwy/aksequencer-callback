@@ -19,11 +19,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpK-b4-Z3P">
-                                <rect key="frame" x="164.5" y="328.5" width="46" height="30"/>
+                                <rect key="frame" x="150" y="308.5" width="75" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="6ze-Gn-QKx"/>
-                                    <constraint firstAttribute="width" constant="46" id="IO1-Is-VNF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="MXc-dP-me5"/>
+                                    <constraint firstAttribute="height" constant="50" id="Xmy-Zp-0kv"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
                                     <action selector="playPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fp2-PJ-WyW"/>
@@ -32,14 +33,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dpK-b4-Z3P" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9ab-vm-2ck"/>
-                            <constraint firstItem="dpK-b4-Z3P" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="oug-Jm-lph"/>
+                            <constraint firstItem="dpK-b4-Z3P" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0ak-qk-NvY"/>
+                            <constraint firstItem="dpK-b4-Z3P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WWC-RX-3Bq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="playStopButton" destination="dpK-b4-Z3P" id="b0D-kQ-Ika"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
