@@ -25,7 +25,7 @@ class MIDISequencer {
     let callbackInstrument:AKCallbackInstrument
     let callbackTrack:AKMusicTrack?
     let musicTrack:AKMusicTrack?
-    let midi:AKMIDI
+    let midi:AKMIDI = AudioKit.midi
     var channel:MIDIChannel = 0
     var lastAddedBeat:Double = 0
     
@@ -45,7 +45,6 @@ class MIDISequencer {
         musicTrack?.resetToInit()
         callbackTrack = sequencer.newTrack("callback")
         callbackTrack?.resetToInit()
-        midi = AKMIDI()
         callbackInstrument = AKCallbackInstrument()
         sequencer.enableLooping()
         sequencer.addTimeSignatureEvent(timeSignature: AKTimeSignature(topValue: 4, bottomValue: .four))
